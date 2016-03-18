@@ -10,7 +10,7 @@ class TodoItem extends Component
         @state= { editing: false }
 
     handleDoubleClick: ()->
-        @state= { editing: true }
+        @setState { editing: true }
 
     handleSave: (id, text)->
         if text.length is 0
